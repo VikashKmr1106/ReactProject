@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins";
+}
+
+body{
+	background-color: #222438;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background-image: repeating-linear-gradient(to right,transparent 0 50px, #fff1 50px 51px),repeating-linear-gradient(to bottom,transparent 0 50px, #fff1 50px 51px);
+	position: relative;
+}
+
+
+form{
+	background-color: #eee;
+	width: max-content;
+	padding: 6px 10px;
+	margin: 10px;
+	border-radius: 24px;
+	display: flex;
+	gap: 10px;
+}
+form input, button{
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	border: none;
+	background: transparent;
+	font-size: large;
+	cursor: pointer;
+
+}
+
+form .addbtn{
+	width: 30px;
+	height: 30px;
+	/* border: 1px solid #222438; */
+	border-radius: 50%;
+	background: #343841;
+  color: #fff;
+}
+form .addbtn:hover{
+	border: 1px solid #266CFC;
+}
+
+input[type=color]{
+	width: 30px;
+	height: 30px;
+	border: none;
+	border-radius: 40px;
+	background: none;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0px !important;
+	border: none;
+	outline: none;
+}
+input[type="color"]::-webkit-color-swatch {
+	/* border: solid 1px #000;  */
+	border-radius: 50%;
+}
+#list textarea{
+	color: #d6d6d6;
+	background: #333;
+	border: none;
+	resize: none;
+}
+#list textarea::-webkit-scrollbar{
+	display: none;
+}
+#list textarea:focus{
+	outline: none;
+	border: none;
+}
+
+#list .note{
+	background: #333;
+	width: max-content;
+	border-top: 30px solid #e6b905;
+	border-radius: 10px;
+	/* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+	padding: 10px;
+	position: absolute;
+	top: 60px;
+	left: 50px;
+}
+
+#list .note span{
+  position: absolute;
+	bottom: 100%;
+	right: 0px;
+	width: 30px;
+	height: 30px;
+	border-radius: 0 7px 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	background: #333;
+	color : #fff;
+	cursor: pointer;
+}
+
+
+
+
